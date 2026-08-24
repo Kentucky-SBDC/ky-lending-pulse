@@ -1,6 +1,6 @@
 # KY Lending Pulse
 
-Owner: Kevin Norvell, Kentucky SBDC (kevin.norvell@gmail.com)
+Owner: Kevin Norvell, Kentucky SBDC (www.KentuckySBDC.com)
 Status: Live since 2026-08-24. Automated via the "ky-lending-pulse-update" scheduled task (Mondays 7:00 AM local).
 Companion docs: `decisions.md` (binding decisions), `as-built.html` (full technical reference), `sba-7a-lending-agent-design.html` (original design).
 
