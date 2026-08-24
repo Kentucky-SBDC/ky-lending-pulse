@@ -1,6 +1,6 @@
 # KY Lending Pulse
 
-Live dashboard: **https://kevin-norvell.github.io/ky-lending-pulse/**
+Live dashboard: **https://kentucky-sbdc.github.io/ky-lending-pulse/**
 
 Interactive map of SBA 7(a) lending across Kentucky's 120 counties and 12 KY SBDC
 centers, with a permanent history of every data run. Built and updated by the
