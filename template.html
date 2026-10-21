@@ -97,6 +97,9 @@ a{color:var(--red)}
 <div class="controls">
   <label for="view" style="color:var(--muted);font-size:13px">View</label>
   <select id="view" aria-label="Select center"></select>
+  <span class="seg" role="group" aria-label="Program">
+    <button id="p-7a" class="on">7(a)</button><button id="p-504">504</button>
+  </span>
   <span class="seg" role="group" aria-label="Metric">
     <button id="m-loans" class="on">Loans</button><button id="m-dollars">Dollars</button>
   </span>
@@ -122,7 +125,7 @@ a{color:var(--red)}
 <div class="card sec" id="projcard">
   <h2 id="projh">Approved projects</h2>
   <div class="tblwrap"><table id="projtbl"></table></div>
-  <div style="font-size:12px;color:var(--muted);margin-top:6px">Approvals, not disbursements; cancelled loans excluded. Source: SBA 7(a) FOIA loan-level file.</div>
+  <div style="font-size:12px;color:var(--muted);margin-top:6px" id="projsrc">Approvals, not disbursements; cancelled loans excluded. Source: SBA 7(a) FOIA loan-level file.</div>
 </div>
 
 <div class="card sec hist">
@@ -154,7 +157,7 @@ const DATA = JSON.parse(document.getElementById('pulsedata').textContent);
 const T_OF = DATA.county_territory;
 const SNAPS = DATA.snapshots;
 const CENTERS = [...new Set(Object.values(T_OF))].filter(c=>c!=='UNASSIGNED').sort();
-const state = { snap: SNAPS.length-1, view: 'KY', metric: 'loans' };
+const state = { snap: SNAPS.length-1, view: 'KY', metric: 'loans', program: '7a' };
 const $ = id => document.getElementById(id);
 const fmt$ = x => x>=1e6 ? '$'+(x/1e6).toFixed(1)+'M' : x>=1e3 ? '$'+Math.round(x/1e3)+'K' : '$'+x;
 const fmtN = x => x.toLocaleString('en-US');
@@ -168,7 +171,9 @@ function binIdx(v, m){ const e=BINS[m].edges; if(v<e[0]) return -1; let i=0; for
 const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
 
 function snap(){ return SNAPS[state.snap]; }
-function countyVal(c){ const d=snap().counties[c]; return d ? d[state.metric] : 0; }
+function p504(){ return snap().p504 || null; }
+function countySrc(){ return state.program==='504' ? ((p504()||{}).counties||{}) : snap().counties; }
+function countyVal(c){ const d=countySrc()[c]; return d ? d[state.metric] : 0; }
 
 function buildViewSelect(){
   $('view').innerHTML = '<option value="KY">Statewide: Kentucky</option>' +
@@ -191,7 +196,8 @@ function renderMap(){
     out += `<path class="${cls}" d="${d}" fill="${fill}" data-c="${esc(c)}" tabindex="0" role="button" aria-label="${esc(c)} county"></path>`;
   }
   svg.innerHTML=out;
-  $('maph').textContent = `${snap().fy} approvals by county: ${state.metric==='loans'?'loan count':'dollars approved'}`;
+  const prog = state.program==='504' ? '504 ' : '';
+  $('maph').textContent = `${snap().fy} ${prog}approvals by county: ${state.metric==='loans'?'loan count':'dollars approved'}`;
   const zeroSw = `<span class="it"><span class="sw" style="background:var(--zero);border-color:var(--zero-line)"></span>0</span>`;
   $('legend').innerHTML = zeroSw + BINS[state.metric].labels.map((l,i)=>
     `<span class="it"><span class="sw" style="background:var(${RAMP[i]})"></span>${l}</span>`).join('');
@@ -199,7 +205,7 @@ function renderMap(){
 
 function renderCountyTable(){
   const rows = Object.keys(MAP.paths).sort().map(c=>{
-    const d=snap().counties[c]||{loans:0,dollars:0};
+    const d=countySrc()[c]||{loans:0,dollars:0};
     return `<tr><td>${esc(title(c))}</td><td>${esc(T_OF[c])}</td><td class="num">${d.loans}</td><td class="num">${fmt$(d.dollars)}</td></tr>`;
   }).join('');
   $('ctytbl').innerHTML = `<tr><th>County</th><th>Center</th><th class="num">Loans</th><th class="num">Dollars</th></tr>${rows}`;
@@ -208,6 +214,26 @@ function title(c){ return c.replace(/\w+/g,w=>w[0]+w.slice(1).toLowerCase()).rep
 
 function renderStats(){
   const s=snap();
+  if(state.program==='504'){
+    const P=p504();
+    if(!P){
+      $('stath').textContent = '504 program';
+      $('stats').innerHTML = '<div style="color:var(--muted);font-size:13px">No 504 data in this run. The 504 view fills in with the next quarterly publish.</div>';
+    } else if(state.view==='KY'){
+      $('stath').textContent = `Statewide 504 · ${s.fy} to date`;
+      $('stats').innerHTML =
+        st(fmtN(P.statewide.count),'approvals')+st(fmt$(P.statewide.dollars),'SBA debentures')+
+        st(fmt$(P.statewide.tpl_dollars),'third-party loans')+st(fmtN(P.statewide.jobs),'jobs supported');
+    } else {
+      const t=P.territories[state.view];
+      $('stath').textContent = `${state.view} center · 504 · ${s.fy} to date`;
+      $('stats').innerHTML = t ?
+        st(fmtN(t.count),'approvals FYTD')+st(fmt$(t.dollars),'SBA debentures')+st(fmtN(t.jobs),'jobs supported')
+        : '<div style="color:var(--muted);font-size:13px">No 504 approvals recorded for this center.</div>';
+    }
+    function st(v,k){return `<div class="stat"><div class="v">${v}</div><div class="k">${k}</div></div>`;}
+    return;
+  }
   if(state.view==='KY'){
     $('stath').textContent = `Statewide · ${s.fy} to date`;
     $('stats').innerHTML =
@@ -226,6 +252,19 @@ function renderStats(){
 
 function renderBars(){
   const s=snap();
+  if(state.program==='504'){
+    const P=p504();
+    const list = (P&&P.cdcs||[]).map(c=>({name:c.name, loans:c.count, dollars:c.dollars}));
+    $('lendh').textContent = 'CDCs in Kentucky (by 504 approvals; FYTD, statewide)';
+    const max=Math.max(1,...list.map(l=>l.loans));
+    $('bars').innerHTML = list.map(l=>
+      `<div class="row" title="${esc(l.name)}: ${l.loans} approvals · ${fmt$(l.dollars)}">
+        <span class="nm">${esc(l.name)}</span>
+        <span class="tr"><span class="fl" style="width:${Math.max(2,Math.round(l.loans/max*100))}%"></span></span>
+        <span class="vv">${l.loans} · ${fmt$(l.dollars)}</span></div>`).join('')
+      || '<div style="color:var(--muted);font-size:13px">No 504 activity in this run.</div>';
+    return;
+  }
   const list = state.view==='KY' ? s.statewide.top_lenders
              : (s.territories[state.view]?.top_lenders||[]);
   $('lendh').textContent = (state.view==='KY'?'Top 10 lenders in Kentucky':'Top lenders, '+state.view) + ' (by loans; FYTD)';
@@ -240,6 +279,32 @@ function renderBars(){
 
 function renderProjects(){
   const s=snap();
+  if(state.program==='504'){
+    const P=p504();
+    $('projsrc').textContent = 'Approvals, not disbursements; cancelled loans excluded. Source: SBA 504 FOIA loan-level file. Amounts are the SBA debenture; the third-party bank loan is shown separately.';
+    if(!P){
+      $('projh').textContent = '504 approved projects';
+      $('projtbl').innerHTML = '<tr><td style="color:var(--muted)">No 504 data in this run. The 504 view fills in with the next quarterly publish.</td></tr>';
+      return;
+    }
+    if(state.view==='KY'){
+      $('projh').textContent = `504 center summary · ${s.fy} to date (FOIA as of ${P.as_of})`;
+      const rows = CENTERS.map(c=>{
+        const t=P.territories[c];
+        return `<tr data-center="${esc(c)}" style="cursor:pointer"><td>${esc(c)}</td><td class="num">${t?t.count:0}</td><td class="num">${t?fmt$(t.dollars):'$0'}</td><td class="num">${t?t.new:0}</td><td class="num">${t?fmtN(t.jobs):0}</td></tr>`;
+      }).join('');
+      $('projtbl').innerHTML = `<tr><th>Center</th><th class="num">Approvals</th><th class="num">SBA debentures</th><th class="num">New biz</th><th class="num">Jobs</th></tr>${rows}`;
+    } else {
+      const t=P.territories[state.view];
+      $('projh').textContent = `Largest 504 projects, ${state.view} · ${s.fy} to date (FOIA as of ${P.as_of})`;
+      if(!t||!t.top.length){ $('projtbl').innerHTML='<tr><td style="color:var(--muted)">No 504 approvals recorded for this center.</td></tr>'; return; }
+      const rows=t.top.map(p=>
+        `<tr><td><b>${esc(p.business)}</b></td><td>${esc(p.city)} (${esc(p.county)})</td><td class="num">${fmt$(p.amount)}</td><td>${esc(p.cdc)}</td><td>${p.tpl?esc(p.tpl)+(p.tpl_dollars?` (${fmt$(p.tpl_dollars)})`:''):''}</td><td>${esc(p.industry)}</td><td>${p.age}</td><td>${p.date}</td></tr>`).join('');
+      $('projtbl').innerHTML=`<tr><th>Business</th><th>Location</th><th class="num">Debenture</th><th>CDC</th><th>Third-party lender</th><th>Industry</th><th>Age</th><th>Approved</th></tr>${rows}`;
+    }
+    return;
+  }
+  $('projsrc').textContent = 'Approvals, not disbursements; cancelled loans excluded. Source: SBA 7(a) FOIA loan-level file.';
   if(state.view==='KY'){
     $('projh').textContent = `Center summary · ${s.quarter} approved projects`;
     const rows = CENTERS.map(c=>{
@@ -276,21 +341,25 @@ function renderBanner(){
 
 function renderAll(){
   const s=snap();
-  $('asof').textContent = `run ${s.run} · monthly ${s.monthly_as_of} · FOIA ${s.foia_as_of}`;
+  $('asof').textContent = `run ${s.run} · monthly ${s.monthly_as_of} · FOIA ${s.foia_as_of}` +
+    (s.p504 ? ` · 504 FOIA ${s.p504.as_of}` : '');
   buildSnapSelect(); renderBanner(); renderMap(); renderCountyTable(); renderStats(); renderBars(); renderProjects(); renderHistory();
 }
 
 // events
 $('view').addEventListener('change',e=>{state.view=e.target.value;renderAll();});
 $('snap').addEventListener('change',e=>{state.snap=+e.target.value;renderAll();});
+$('p-7a').addEventListener('click',()=>{state.program='7a';$('p-7a').classList.add('on');$('p-504').classList.remove('on');renderAll();});
+$('p-504').addEventListener('click',()=>{state.program='504';$('p-504').classList.add('on');$('p-7a').classList.remove('on');renderAll();});
 $('m-loans').addEventListener('click',()=>{state.metric='loans';$('m-loans').classList.add('on');$('m-dollars').classList.remove('on');renderMap();renderCountyTable();});
 $('m-dollars').addEventListener('click',()=>{state.metric='dollars';$('m-dollars').classList.add('on');$('m-loans').classList.remove('on');renderMap();renderCountyTable();});
 const tip=$('tip');
 document.addEventListener('mousemove',e=>{ if(tip.style.display==='block'){ tip.style.left=Math.min(e.clientX+14,window.innerWidth-250)+'px'; tip.style.top=(e.clientY+14)+'px'; }});
 $('map').addEventListener('mouseover',e=>{
   const p=e.target.closest('.county'); if(!p) return;
-  const c=p.dataset.c, d=snap().counties[c]||{loans:0,dollars:0};
-  tip.innerHTML=`<b>${esc(title(c))} County</b>${d.loans} loans · ${fmt$(d.dollars)} FYTD<div class="m">${esc(T_OF[c])} center · click to open</div>`;
+  const c=p.dataset.c, d=countySrc()[c]||{loans:0,dollars:0};
+  const unit = state.program==='504' ? '504 approvals' : 'loans';
+  tip.innerHTML=`<b>${esc(title(c))} County</b>${d.loans} ${unit} · ${fmt$(d.dollars)} FYTD<div class="m">${esc(T_OF[c])} center · click to open</div>`;
   tip.style.display='block';
 });
 $('map').addEventListener('mouseout',e=>{ if(!e.relatedTarget||!e.relatedTarget.closest('.county')) tip.style.display='none'; });

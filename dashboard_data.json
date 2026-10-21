@@ -2879,6 +2879,1658 @@
      }
     }
    }
+  },
+  {
+   "run": "2026-10-21",
+   "monthly_as_of": "2026-09-30",
+   "foia_as_of": "2026-06-30",
+   "quarter": "Apr\u2013Jun 2026",
+   "fy": "FY2026",
+   "note": "Added the 504 program view (504 FOIA as of 2026-06-30, FY2026 to date). 7(a) figures unchanged from this morning's year-end run.",
+   "statewide": {
+    "loans": 483,
+    "dollars": 267928700,
+    "lender_count": 72,
+    "top_lenders": [
+     {
+      "name": "U.S. Bank",
+      "loans": 57,
+      "dollars": 13911500
+     },
+     {
+      "name": "Newtek Bank",
+      "loans": 46,
+      "dollars": 17105000
+     },
+     {
+      "name": "Stock Yards Bank & Trust",
+      "loans": 42,
+      "dollars": 21866500
+     },
+     {
+      "name": "Community Trust Bank",
+      "loans": 41,
+      "dollars": 8108600
+     },
+     {
+      "name": "Republic Bank & Trust",
+      "loans": 38,
+      "dollars": 19114400
+     },
+     {
+      "name": "Northeast Bank",
+      "loans": 29,
+      "dollars": 5472900
+     },
+     {
+      "name": "Huntington National Bank",
+      "loans": 17,
+      "dollars": 6328700
+     },
+     {
+      "name": "Readycap Lending",
+      "loans": 17,
+      "dollars": 2271000
+     },
+     {
+      "name": "Fifth Third Bank",
+      "loans": 14,
+      "dollars": 3989000
+     },
+     {
+      "name": "Live Oak Bank",
+      "loans": 13,
+      "dollars": 10260000
+     }
+    ]
+   },
+   "counties": {
+    "ADAIR": {
+     "loans": 1,
+     "dollars": 185000
+    },
+    "ALLEN": {
+     "loans": 2,
+     "dollars": 575000
+    },
+    "ANDERSON": {
+     "loans": 4,
+     "dollars": 215000
+    },
+    "BARREN": {
+     "loans": 1,
+     "dollars": 177600
+    },
+    "BELL": {
+     "loans": 1,
+     "dollars": 418800
+    },
+    "BOONE": {
+     "loans": 22,
+     "dollars": 23746200
+    },
+    "BOURBON": {
+     "loans": 1,
+     "dollars": 50000
+    },
+    "BOYD": {
+     "loans": 2,
+     "dollars": 1525000
+    },
+    "BOYLE": {
+     "loans": 5,
+     "dollars": 1293800
+    },
+    "BRACKEN": {
+     "loans": 2,
+     "dollars": 85000
+    },
+    "BRECKINRIDGE": {
+     "loans": 1,
+     "dollars": 20000
+    },
+    "BULLITT": {
+     "loans": 11,
+     "dollars": 2942000
+    },
+    "CALLOWAY": {
+     "loans": 2,
+     "dollars": 112500
+    },
+    "CAMPBELL": {
+     "loans": 9,
+     "dollars": 7180300
+    },
+    "CARROLL": {
+     "loans": 2,
+     "dollars": 235400
+    },
+    "CHRISTIAN": {
+     "loans": 4,
+     "dollars": 1250000
+    },
+    "CLARK": {
+     "loans": 5,
+     "dollars": 1152000
+    },
+    "CLAY": {
+     "loans": 2,
+     "dollars": 275000
+    },
+    "DAVIESS": {
+     "loans": 12,
+     "dollars": 4085700
+    },
+    "ESTILL": {
+     "loans": 1,
+     "dollars": 100000
+    },
+    "FAYETTE": {
+     "loans": 53,
+     "dollars": 28812600
+    },
+    "FLEMING": {
+     "loans": 4,
+     "dollars": 386300
+    },
+    "FLOYD": {
+     "loans": 4,
+     "dollars": 3345200
+    },
+    "GARRARD": {
+     "loans": 2,
+     "dollars": 612300
+    },
+    "GRANT": {
+     "loans": 3,
+     "dollars": 650000
+    },
+    "GRAVES": {
+     "loans": 1,
+     "dollars": 1520000
+    },
+    "GREENUP": {
+     "loans": 2,
+     "dollars": 323900
+    },
+    "HANCOCK": {
+     "loans": 1,
+     "dollars": 70000
+    },
+    "HARDIN": {
+     "loans": 8,
+     "dollars": 8038500
+    },
+    "HARLAN": {
+     "loans": 1,
+     "dollars": 1025000
+    },
+    "HARRISON": {
+     "loans": 7,
+     "dollars": 2153800
+    },
+    "HENDERSON": {
+     "loans": 2,
+     "dollars": 4425000
+    },
+    "HENRY": {
+     "loans": 2,
+     "dollars": 448000
+    },
+    "HOPKINS": {
+     "loans": 8,
+     "dollars": 5515000
+    },
+    "JACKSON": {
+     "loans": 1,
+     "dollars": 850000
+    },
+    "JEFFERSON": {
+     "loans": 146,
+     "dollars": 82171800
+    },
+    "JESSAMINE": {
+     "loans": 9,
+     "dollars": 3388200
+    },
+    "KENTON": {
+     "loans": 25,
+     "dollars": 8324700
+    },
+    "KNOX": {
+     "loans": 4,
+     "dollars": 2943600
+    },
+    "LARUE": {
+     "loans": 2,
+     "dollars": 3812000
+    },
+    "LAUREL": {
+     "loans": 9,
+     "dollars": 7427500
+    },
+    "LIVINGSTON": {
+     "loans": 1,
+     "dollars": 150000
+    },
+    "LOGAN": {
+     "loans": 4,
+     "dollars": 268000
+    },
+    "MADISON": {
+     "loans": 12,
+     "dollars": 4791900
+    },
+    "MASON": {
+     "loans": 2,
+     "dollars": 350000
+    },
+    "MCCRACKEN": {
+     "loans": 8,
+     "dollars": 11361600
+    },
+    "MCLEAN": {
+     "loans": 1,
+     "dollars": 1280000
+    },
+    "MEADE": {
+     "loans": 1,
+     "dollars": 50000
+    },
+    "MERCER": {
+     "loans": 2,
+     "dollars": 415100
+    },
+    "MONTGOMERY": {
+     "loans": 2,
+     "dollars": 1185000
+    },
+    "MUHLENBERG": {
+     "loans": 1,
+     "dollars": 350000
+    },
+    "NELSON": {
+     "loans": 4,
+     "dollars": 637000
+    },
+    "OHIO": {
+     "loans": 1,
+     "dollars": 410100
+    },
+    "OLDHAM": {
+     "loans": 5,
+     "dollars": 10502800
+    },
+    "PENDLETON": {
+     "loans": 3,
+     "dollars": 67200
+    },
+    "PIKE": {
+     "loans": 8,
+     "dollars": 344000
+    },
+    "POWELL": {
+     "loans": 1,
+     "dollars": 129000
+    },
+    "PULASKI": {
+     "loans": 2,
+     "dollars": 730000
+    },
+    "SCOTT": {
+     "loans": 8,
+     "dollars": 913200
+    },
+    "SHELBY": {
+     "loans": 4,
+     "dollars": 3964900
+    },
+    "SPENCER": {
+     "loans": 2,
+     "dollars": 232000
+    },
+    "TAYLOR": {
+     "loans": 1,
+     "dollars": 350000
+    },
+    "TRIGG": {
+     "loans": 1,
+     "dollars": 12000
+    },
+    "WARREN": {
+     "loans": 17,
+     "dollars": 10520400
+    },
+    "WAYNE": {
+     "loans": 3,
+     "dollars": 1272500
+    },
+    "WHITLEY": {
+     "loans": 2,
+     "dollars": 5150000
+    },
+    "WOODFORD": {
+     "loans": 3,
+     "dollars": 624300
+    }
+   },
+   "territories": {
+    "Covington": {
+     "loans": 56,
+     "dollars": 39251200,
+     "top_lenders": [
+      {
+       "name": "U.S. Bank",
+       "loans": 15,
+       "dollars": 1324800,
+       "state": "OH"
+      },
+      {
+       "name": "Huntington National Bank",
+       "loans": 11,
+       "dollars": 4947000,
+       "state": "OH"
+      },
+      {
+       "name": "Heritage Bank Inc",
+       "loans": 5,
+       "dollars": 16807800,
+       "state": "KY"
+      },
+      {
+       "name": "Wells Fargo Bank National Association",
+       "loans": 3,
+       "dollars": 953500,
+       "state": "SD"
+      },
+      {
+       "name": "American Momentum Bank",
+       "loans": 2,
+       "dollars": 802000,
+       "state": "TX"
+      }
+     ],
+     "q": {
+      "count": 10,
+      "dollars": 9134200,
+      "new": 6,
+      "jobs": 147,
+      "top": [
+       {
+        "business": "MARKETING SUPPORT SERVICES, INC.",
+        "city": "Florence",
+        "county": "Boone",
+        "lender": "Heritage Bank Inc",
+        "amount": 5000000,
+        "industry": "General Warehousing and Storage",
+        "age": "existing",
+        "date": "2026-05-12"
+       },
+       {
+        "business": "Mercy Works Louisville",
+        "city": "Morning View",
+        "county": "Kenton",
+        "lender": "Pathward National Association",
+        "amount": 1461200,
+        "industry": "Home Health Care Services",
+        "age": "new",
+        "date": "2026-04-14"
+       },
+       {
+        "business": "TripleC Travel, Inc.",
+        "city": "Union",
+        "county": "Boone",
+        "lender": "Heritage Bank Inc",
+        "amount": 751000,
+        "industry": "All Other Travel Arrangement and Reservation Services",
+        "age": "new",
+        "date": "2026-04-10"
+       },
+       {
+        "business": "Florence Body, Frame & Towing, Inc.",
+        "city": "Florence",
+        "county": "Boone",
+        "lender": "Commercial Bank of California",
+        "amount": 703000,
+        "industry": "Automotive Body, Paint, and Interior Repair and Maintenance",
+        "age": "new",
+        "date": "2026-06-08"
+       },
+       {
+        "business": "PrimeAdjusting LLC",
+        "city": "Covington",
+        "county": "Kenton",
+        "lender": "American Momentum Bank",
+        "amount": 702000,
+        "industry": "Claims Adjusting",
+        "age": "new",
+        "date": "2026-05-21"
+       }
+      ]
+     }
+    },
+    "Louisville": {
+     "loans": 146,
+     "dollars": 82171800,
+     "top_lenders": [
+      {
+       "name": "Stock Yards Bank & Trust",
+       "loans": 28,
+       "dollars": 9725900,
+       "state": "KY"
+      },
+      {
+       "name": "Republic Bank & Trust",
+       "loans": 25,
+       "dollars": 14289800,
+       "state": "KY"
+      },
+      {
+       "name": "U.S. Bank",
+       "loans": 14,
+       "dollars": 5514400,
+       "state": "OH"
+      },
+      {
+       "name": "Newtek Bank",
+       "loans": 14,
+       "dollars": 4405000,
+       "state": "FL"
+      },
+      {
+       "name": "Northeast Bank",
+       "loans": 8,
+       "dollars": 1824700,
+       "state": "ME"
+      }
+     ],
+     "q": {
+      "count": 33,
+      "dollars": 17096800,
+      "new": 17,
+      "jobs": 395,
+      "top": [
+       {
+        "business": "B & G FUEL UP LLC",
+        "city": "Louisville",
+        "county": "Jefferson",
+        "lender": "The Bancorp Bank",
+        "amount": 4515300,
+        "industry": "Gasoline Stations with Convenience Stores",
+        "age": "new",
+        "date": "2026-06-16"
+       },
+       {
+        "business": "LLBG Holdings Inc.",
+        "city": "Louisville",
+        "county": "Jefferson",
+        "lender": "Hometown Bank",
+        "amount": 2235000,
+        "industry": "All Other Amusement and Recreation Industries",
+        "age": "new",
+        "date": "2026-06-03"
+       },
+       {
+        "business": "THE HOUSE OF MARIGOLD II",
+        "city": "Louisville",
+        "county": "Jefferson",
+        "lender": "First Merchants Bank",
+        "amount": 1909100,
+        "industry": "Full-Service Restaurants",
+        "age": "existing",
+        "date": "2026-04-04"
+       },
+       {
+        "business": "DWYER DESIGNSCAPES LLC",
+        "city": "Louisville",
+        "county": "Jefferson",
+        "lender": "Old National Bank",
+        "amount": 1488000,
+        "industry": "Landscaping Services",
+        "age": "new",
+        "date": "2026-06-12"
+       },
+       {
+        "business": "Natalie O. Design., LLC",
+        "city": "Louisville",
+        "county": "Jefferson",
+        "lender": "Stock Yards Bank & Trust",
+        "amount": 845100,
+        "industry": "All Other Personal Services",
+        "age": "existing",
+        "date": "2026-06-05"
+       }
+      ]
+     }
+    },
+    "Southeastern": {
+     "loans": 31,
+     "dollars": 20739700,
+     "top_lenders": [
+      {
+       "name": "Community Trust Bank",
+       "loans": 8,
+       "dollars": 4102300,
+       "state": "KY"
+      },
+      {
+       "name": "Northeast Bank",
+       "loans": 4,
+       "dollars": 790000,
+       "state": "ME"
+      },
+      {
+       "name": "Newtek Bank",
+       "loans": 3,
+       "dollars": 5275000,
+       "state": "FL"
+      },
+      {
+       "name": "Celtic Bank",
+       "loans": 3,
+       "dollars": 291600,
+       "state": "UT"
+      },
+      {
+       "name": "First Bank of the Lake",
+       "loans": 2,
+       "dollars": 5065000,
+       "state": "MO"
+      }
+     ],
+     "q": {
+      "count": 8,
+      "dollars": 1974300,
+      "new": 3,
+      "jobs": 47,
+      "top": [
+       {
+        "business": "Swope Surgical Inc",
+        "city": "Danville",
+        "county": "Boyle",
+        "lender": "JPMorgan Chase Bank, National Association",
+        "amount": 763800,
+        "industry": "Surgical Appliance and Supplies Manufacturing",
+        "age": "new",
+        "date": "2026-06-24"
+       },
+       {
+        "business": "Shree Ganesh Cafe LLC",
+        "city": "London",
+        "county": "Laurel",
+        "lender": "ConnectOne Bank",
+        "amount": 560000,
+        "industry": "Snack and Nonalcoholic Beverage Bars",
+        "age": "new",
+        "date": "2026-04-20"
+       },
+       {
+        "business": "Estes Insurance Agency",
+        "city": "Columbia",
+        "county": "Adair",
+        "lender": "Northeast Bank",
+        "amount": 185000,
+        "industry": "Insurance Agencies and Brokerages",
+        "age": "existing",
+        "date": "2026-06-22"
+       },
+       {
+        "business": "Day Brothers RV Sales Center LLC",
+        "city": "Corbin",
+        "county": "Whitley",
+        "lender": "Northeast Bank",
+        "amount": 150000,
+        "industry": "Recreational Vehicle Dealers",
+        "age": "existing",
+        "date": "2026-04-17"
+       },
+       {
+        "business": "C&D ARBITRAGE LLC",
+        "city": "London",
+        "county": "Laurel",
+        "lender": "Celtic Bank",
+        "amount": 150000,
+        "industry": "All Other Miscellaneous Retailers",
+        "age": "existing",
+        "date": "2026-05-12"
+       }
+      ]
+     }
+    },
+    "Paducah": {
+     "loans": 13,
+     "dollars": 13156100,
+     "top_lenders": [
+      {
+       "name": "U.S. Bank",
+       "loans": 4,
+       "dollars": 3343100,
+       "state": "OH"
+      },
+      {
+       "name": "CenTrust Bank, A Division of SmartBiz Bank National Association",
+       "loans": 2,
+       "dollars": 500000,
+       "state": "IL"
+      },
+      {
+       "name": "Newtek Bank",
+       "loans": 2,
+       "dollars": 200000,
+       "state": "FL"
+      },
+      {
+       "name": "Commonwealth Business Bank",
+       "loans": 1,
+       "dollars": 5000000,
+       "state": "CA"
+      },
+      {
+       "name": "SouthState Bank, National Association",
+       "loans": 1,
+       "dollars": 1918000,
+       "state": "FL"
+      }
+     ],
+     "q": {
+      "count": 4,
+      "dollars": 8756100,
+      "new": 1,
+      "jobs": 21,
+      "top": [
+       {
+        "business": "LA QUINTA INN AND SUITES PADUCAH",
+        "city": "Paducah",
+        "county": "McCracken",
+        "lender": "Commonwealth Business Bank",
+        "amount": 5000000,
+        "industry": "Hotels (except Casino Hotels) and Motels",
+        "age": "existing",
+        "date": "2026-05-29"
+       },
+       {
+        "business": "Audiology & Hearing Center",
+        "city": "Paducah",
+        "county": "McCracken",
+        "lender": "U.S. Bank",
+        "amount": 3218600,
+        "industry": "Offices of Physical, Occupational and Speech Therapists, and Audiologists",
+        "age": "existing",
+        "date": "2026-06-04"
+       },
+       {
+        "business": "Lee Oil & Gas LLC",
+        "city": "Paducah",
+        "county": "McCracken",
+        "lender": "Hancock Whitney Bank",
+        "amount": 525000,
+        "industry": "Engineering Services",
+        "age": "existing",
+        "date": "2026-04-24"
+       },
+       {
+        "business": "BLUGRASS MODERN LLC",
+        "city": "Murray",
+        "county": "Calloway",
+        "lender": "U.S. Bank",
+        "amount": 12500,
+        "industry": "Vending Machine Operators",
+        "age": "new",
+        "date": "2026-04-09"
+       }
+      ]
+     }
+    },
+    "Lexington": {
+     "loans": 83,
+     "dollars": 36357200,
+     "top_lenders": [
+      {
+       "name": "Community Trust Bank",
+       "loans": 14,
+       "dollars": 2099300,
+       "state": "KY"
+      },
+      {
+       "name": "Fifth Third Bank",
+       "loans": 8,
+       "dollars": 1024000,
+       "state": "OH"
+      },
+      {
+       "name": "Newtek Bank",
+       "loans": 7,
+       "dollars": 870000,
+       "state": "FL"
+      },
+      {
+       "name": "Republic Bank & Trust",
+       "loans": 6,
+       "dollars": 1520200,
+       "state": "KY"
+      },
+      {
+       "name": "Stock Yards Bank & Trust",
+       "loans": 5,
+       "dollars": 3994900,
+       "state": "KY"
+      }
+     ],
+     "q": {
+      "count": 28,
+      "dollars": 15530900,
+      "new": 13,
+      "jobs": 307,
+      "top": [
+       {
+        "business": "Kentuckiana Bath, LLC",
+        "city": "Lexington",
+        "county": "Fayette",
+        "lender": "First Internet Bank of Indiana",
+        "amount": 2512000,
+        "industry": "Residential Remodelers",
+        "age": "new",
+        "date": "2026-05-12"
+       },
+       {
+        "business": "Grayhawk, LLC",
+        "city": "Lexington",
+        "county": "Fayette",
+        "lender": "Stock Yards Bank & Trust",
+        "amount": 1988700,
+        "industry": "Drywall and Insulation Contractors",
+        "age": "existing",
+        "date": "2026-05-19"
+       },
+       {
+        "business": "Comfortable Living, LLC",
+        "city": "Lexington",
+        "county": "Fayette",
+        "lender": "Byline Bank",
+        "amount": 1975000,
+        "industry": "Home Health Care Services",
+        "age": "existing",
+        "date": "2026-06-11"
+       },
+       {
+        "business": "Kutter Enterprises LLC",
+        "city": "Lexington",
+        "county": "Fayette",
+        "lender": "Capital Bank, National Association",
+        "amount": 1780000,
+        "industry": "General Automotive Repair",
+        "age": "new",
+        "date": "2026-04-27"
+       },
+       {
+        "business": "Greystone Gardens",
+        "city": "Nicholasville",
+        "county": "Jessamine",
+        "lender": "First Western SBLC, LLC",
+        "amount": 1607000,
+        "industry": "Landscaping Services",
+        "age": "new",
+        "date": "2026-06-18"
+       }
+      ]
+     }
+    },
+    "Frankfort": {
+     "loans": 22,
+     "dollars": 16248100,
+     "top_lenders": [
+      {
+       "name": "Stock Yards Bank & Trust",
+       "loans": 5,
+       "dollars": 3792300,
+       "state": "KY"
+      },
+      {
+       "name": "Readycap Lending",
+       "loans": 5,
+       "dollars": 205000,
+       "state": "NJ"
+      },
+      {
+       "name": "Northeast Bank",
+       "loans": 2,
+       "dollars": 325000,
+       "state": "ME"
+      },
+      {
+       "name": "Republic Bank & Trust",
+       "loans": 2,
+       "dollars": 232000,
+       "state": "KY"
+      },
+      {
+       "name": "U.S. Bank",
+       "loans": 2,
+       "dollars": 171000,
+       "state": "OH"
+      }
+     ],
+     "q": {
+      "count": 5,
+      "dollars": 8652100,
+      "new": 3,
+      "jobs": 33,
+      "top": [
+       {
+        "business": "RAVI KRISHNA LLC",
+        "city": "La Grange",
+        "county": "Oldham",
+        "lender": "GBank",
+        "amount": 4449000,
+        "industry": "Hotels (except Casino Hotels) and Motels",
+        "age": "new",
+        "date": "2026-04-15"
+       },
+       {
+        "business": "COXIE LLC",
+        "city": "Shelbyville",
+        "county": "Shelby",
+        "lender": "Stock Yards Bank & Trust",
+        "amount": 3114900,
+        "industry": "All Other Miscellaneous Fabricated Metal Product Manufacturing",
+        "age": "existing",
+        "date": "2026-06-09"
+       },
+       {
+        "business": "KDS Holdings LLC",
+        "city": "Buckner",
+        "county": "Oldham",
+        "lender": "TowneBank",
+        "amount": 960800,
+        "industry": "Pet Care (except Veterinary) Services",
+        "age": "new",
+        "date": "2026-06-15"
+       },
+       {
+        "business": "CK Liquors & More LLC",
+        "city": "Carrollton",
+        "county": "Carroll",
+        "lender": "Stock Yards Bank & Trust",
+        "amount": 77400,
+        "industry": "Beer, Wine, and Liquor Retailers",
+        "age": "new",
+        "date": "2026-04-27"
+       },
+       {
+        "business": "Williamstown Chiropractic Center",
+        "city": "Dry Ridge",
+        "county": "Grant",
+        "lender": "Readycap Lending",
+        "amount": 50000,
+        "industry": "Offices of Chiropractors",
+        "age": "existing",
+        "date": "2026-06-04"
+       }
+      ]
+     }
+    },
+    "Elizabethtown": {
+     "loans": 28,
+     "dollars": 15849500,
+     "top_lenders": [
+      {
+       "name": "Newtek Bank",
+       "loans": 3,
+       "dollars": 675000,
+       "state": "FL"
+      },
+      {
+       "name": "Northeast Bank",
+       "loans": 3,
+       "dollars": 550000,
+       "state": "ME"
+      },
+      {
+       "name": "First Harrison Bank",
+       "loans": 3,
+       "dollars": 402000,
+       "state": "IN"
+      },
+      {
+       "name": "U.S. Bank",
+       "loans": 3,
+       "dollars": 75000,
+       "state": "OH"
+      },
+      {
+       "name": "American Momentum Bank",
+       "loans": 2,
+       "dollars": 3812000,
+       "state": "TX"
+      }
+     ],
+     "q": {
+      "count": 6,
+      "dollars": 1024000,
+      "new": 3,
+      "jobs": 54,
+      "top": [
+       {
+        "business": "CCG Store 4 LLC",
+        "city": "Elizabethtown",
+        "county": "Hardin",
+        "lender": "Live Oak Bank",
+        "amount": 350000,
+        "industry": "Limited-Service Restaurants",
+        "age": "new",
+        "date": "2026-05-26"
+       },
+       {
+        "business": "Watch Me Grow Childcare, Inc.",
+        "city": "Bardstown",
+        "county": "Nelson",
+        "lender": "Newtek Bank",
+        "amount": 300000,
+        "industry": "Educational Support Services",
+        "age": "existing",
+        "date": "2026-04-19"
+       },
+       {
+        "business": "J&J Davis Enterprises LLC",
+        "city": "Bardstown",
+        "county": "Nelson",
+        "lender": "Town & Country Bank and Trust Company",
+        "amount": 184000,
+        "industry": "Fitness and Recreational Sports Centers",
+        "age": "existing",
+        "date": "2026-04-20"
+       },
+       {
+        "business": "LIL' RASCALS CHILDCARE LLC",
+        "city": "Radcliff",
+        "county": "Hardin",
+        "lender": "Northeast Bank",
+        "amount": 150000,
+        "industry": "Child Care Services",
+        "age": "existing",
+        "date": "2026-04-07"
+       },
+       {
+        "business": "GOLDENROD COMPOST COMPANY LLC",
+        "city": "Union Star",
+        "county": "Breckinridge",
+        "lender": "U.S. Bank",
+        "amount": 20000,
+        "industry": "Other Nonhazardous Waste Treatment and Disposal",
+        "age": "new",
+        "date": "2026-05-13"
+       }
+      ]
+     }
+    },
+    "Bowling Green": {
+     "loans": 24,
+     "dollars": 11541000,
+     "top_lenders": [
+      {
+       "name": "Newtek Bank",
+       "loans": 6,
+       "dollars": 820000,
+       "state": "FL"
+      },
+      {
+       "name": "Stock Yards Bank & Trust",
+       "loans": 4,
+       "dollars": 4353400,
+       "state": "KY"
+      },
+      {
+       "name": "U.S. Bank",
+       "loans": 4,
+       "dollars": 169000,
+       "state": "OH"
+      },
+      {
+       "name": "Huntington National Bank",
+       "loans": 3,
+       "dollars": 568000,
+       "state": "OH"
+      },
+      {
+       "name": "CenTrust Bank, A Division of SmartBiz Bank National Association",
+       "loans": 2,
+       "dollars": 327600,
+       "state": "IL"
+      }
+     ],
+     "q": {
+      "count": 9,
+      "dollars": 5274000,
+      "new": 4,
+      "jobs": 82,
+      "top": [
+       {
+        "business": "Inked Brands, Inc.",
+        "city": "Bowling Green",
+        "county": "Warren",
+        "lender": "The Bancorp Bank",
+        "amount": 4250000,
+        "industry": "Office Supplies and Stationery Retailers",
+        "age": "existing",
+        "date": "2026-05-18"
+       },
+       {
+        "business": "SKA Health and Wellness",
+        "city": "Scottsville",
+        "county": "Allen",
+        "lender": "Newtek Bank",
+        "amount": 525000,
+        "industry": "Offices of All Other Miscellaneous Health Practitioners",
+        "age": "existing",
+        "date": "2026-05-27"
+       },
+       {
+        "business": "Cade Plumbing LLC",
+        "city": "Bowling Green",
+        "county": "Warren",
+        "lender": "Lendistry SBLC, LLC",
+        "amount": 193000,
+        "industry": "Plumbing, Heating, and Air-Conditioning Contractors",
+        "age": "existing",
+        "date": "2026-06-16"
+       },
+       {
+        "business": "Heartfelt Healthcare PLLC",
+        "city": "Russellville",
+        "county": "Logan",
+        "lender": "Newtek Bank",
+        "amount": 135000,
+        "industry": "Offices of All Other Miscellaneous Health Practitioners",
+        "age": "new",
+        "date": "2026-06-22"
+       },
+       {
+        "business": "White Orchid Weddings & Events",
+        "city": "Rockfield",
+        "county": "Warren",
+        "lender": "Newtek Bank",
+        "amount": 60000,
+        "industry": "All Other Personal Services",
+        "age": "new",
+        "date": "2026-05-04"
+       }
+      ]
+     }
+    },
+    "Owensboro": {
+     "loans": 30,
+     "dollars": 17385800,
+     "top_lenders": [
+      {
+       "name": "Newtek Bank",
+       "loans": 6,
+       "dollars": 3350000,
+       "state": "FL"
+      },
+      {
+       "name": "U.S. Bank",
+       "loans": 3,
+       "dollars": 745600,
+       "state": "OH"
+      },
+      {
+       "name": "First Bank of the Lake",
+       "loans": 2,
+       "dollars": 3170000,
+       "state": "MO"
+      },
+      {
+       "name": "Fifth Third Bank",
+       "loans": 2,
+       "dollars": 2745000,
+       "state": "OH"
+      },
+      {
+       "name": "Live Oak Bank",
+       "loans": 2,
+       "dollars": 1975000,
+       "state": "NC"
+      }
+     ],
+     "q": {
+      "count": 10,
+      "dollars": 4730500,
+      "new": 3,
+      "jobs": 101,
+      "top": [
+       {
+        "business": "Seven Oaks Stone, LLC",
+        "city": "Madisonville",
+        "county": "Hopkins",
+        "lender": "Newtek Bank",
+        "amount": 1350000,
+        "industry": "Cut Stone and Stone Product Manufacturing",
+        "age": "existing",
+        "date": "2026-04-08"
+       },
+       {
+        "business": "Small Steps Of Faith 2",
+        "city": "Hopkinsville",
+        "county": "Christian",
+        "lender": "Newtek Bank",
+        "amount": 950000,
+        "industry": "Child Care Services",
+        "age": "existing",
+        "date": "2026-04-03"
+       },
+       {
+        "business": "NBM CAKES LLC",
+        "city": "Owensboro",
+        "county": "Daviess",
+        "lender": "Republic Bank & Trust",
+        "amount": 872400,
+        "industry": "Retail Bakeries",
+        "age": "new",
+        "date": "2026-04-28"
+       },
+       {
+        "business": "Boey Enterprises LLC",
+        "city": "Owensboro",
+        "county": "Daviess",
+        "lender": "U.S. Bank",
+        "amount": 645600,
+        "industry": "Window Treatment Retailers",
+        "age": "new",
+        "date": "2026-06-17"
+       },
+       {
+        "business": "Seven Oaks Stone, LLC",
+        "city": "Madisonville",
+        "county": "Hopkins",
+        "lender": "Newtek Bank",
+        "amount": 400000,
+        "industry": "Cut Stone and Stone Product Manufacturing",
+        "age": "existing",
+        "date": "2026-04-08"
+       }
+      ]
+     }
+    },
+    "Eastern KY": {
+     "loans": 18,
+     "dollars": 6981900,
+     "top_lenders": [
+      {
+       "name": "Community Trust Bank",
+       "loans": 9,
+       "dollars": 852400,
+       "state": "KY"
+      },
+      {
+       "name": "U.S. Bank",
+       "loans": 4,
+       "dollars": 2059600,
+       "state": "OH"
+      },
+      {
+       "name": "Live Oak Bank",
+       "loans": 3,
+       "dollars": 2860000,
+       "state": "NC"
+      },
+      {
+       "name": "JPMorgan Chase Bank, National Association",
+       "loans": 1,
+       "dollars": 990000,
+       "state": "OH"
+      },
+      {
+       "name": "Peoples Bank",
+       "loans": 1,
+       "dollars": 219900,
+       "state": "OH"
+      }
+     ],
+     "q": {
+      "count": 3,
+      "dollars": 1409000,
+      "new": 0,
+      "jobs": 18,
+      "top": [
+       {
+        "business": "APPALACHIAN INSURANCE, INC.",
+        "city": "Betsy Layne",
+        "county": "Floyd",
+        "lender": "Live Oak Bank",
+        "amount": 1300000,
+        "industry": "Insurance Agencies and Brokerages",
+        "age": "existing",
+        "date": "2026-05-04"
+       },
+       {
+        "business": "Markie's Chow Down LLC",
+        "city": "Pikeville",
+        "county": "Pike",
+        "lender": "Community Trust Bank",
+        "amount": 59000,
+        "industry": "Mobile Food Services",
+        "age": "existing",
+        "date": "2026-05-06"
+       },
+       {
+        "business": "Flawless Faces LLC",
+        "city": "South Williamson",
+        "county": "Pike",
+        "lender": "Community Trust Bank",
+        "amount": 50000,
+        "industry": "Offices of All Other Miscellaneous Health Practitioners",
+        "age": "existing",
+        "date": "2026-04-06"
+       }
+      ]
+     }
+    },
+    "Berea": {
+     "loans": 21,
+     "dollars": 7357900,
+     "top_lenders": [
+      {
+       "name": "Community Trust Bank",
+       "loans": 5,
+       "dollars": 731900,
+       "state": "KY"
+      },
+      {
+       "name": "Republic Bank & Trust",
+       "loans": 3,
+       "dollars": 1850000,
+       "state": "KY"
+      },
+      {
+       "name": "Northeast Bank",
+       "loans": 3,
+       "dollars": 257000,
+       "state": "ME"
+      },
+      {
+       "name": "Newtek Bank",
+       "loans": 2,
+       "dollars": 750000,
+       "state": "FL"
+      },
+      {
+       "name": "U.S. Bank",
+       "loans": 2,
+       "dollars": 100000,
+       "state": "OH"
+      }
+     ],
+     "q": {
+      "count": 6,
+      "dollars": 2069900,
+      "new": 4,
+      "jobs": 125,
+      "top": [
+       {
+        "business": "Teal Ridge Roofing and Exteriors LLC",
+        "city": "Richmond",
+        "county": "Madison",
+        "lender": "Republic Bank & Trust",
+        "amount": 1500000,
+        "industry": "Roofing Contractors",
+        "age": "new",
+        "date": "2026-04-29"
+       },
+       {
+        "business": "Teal Ridge Roofing and Exteriors LLC",
+        "city": "Richmond",
+        "county": "Madison",
+        "lender": "Republic Bank & Trust",
+        "amount": 150000,
+        "industry": "Roofing Contractors",
+        "age": "new",
+        "date": "2026-04-30"
+       },
+       {
+        "business": "Joseph's Heating and Air, Inc.",
+        "city": "Richmond",
+        "county": "Madison",
+        "lender": "Community Trust Bank",
+        "amount": 140900,
+        "industry": "Plumbing, Heating, and Air-Conditioning Contractors",
+        "age": "existing",
+        "date": "2026-06-24"
+       },
+       {
+        "business": "Battle Axe Forestry Mulching LLC",
+        "city": "Stanton",
+        "county": "Powell",
+        "lender": "Community Trust Bank",
+        "amount": 129000,
+        "industry": "Support Activities for Forestry",
+        "age": "new",
+        "date": "2026-04-17"
+       },
+       {
+        "business": "Brewers Heating And Cooling Llc",
+        "city": "Irvine",
+        "county": "Estill",
+        "lender": "JPMorgan Chase Bank, National Association",
+        "amount": 100000,
+        "industry": "Plumbing, Heating, and Air-Conditioning Contractors",
+        "age": "existing",
+        "date": "2026-06-15"
+       }
+      ]
+     }
+    },
+    "Maysville": {
+     "loans": 11,
+     "dollars": 888500,
+     "top_lenders": [
+      {
+       "name": "Community Trust Bank",
+       "loans": 4,
+       "dollars": 172700,
+       "state": "KY"
+      },
+      {
+       "name": "U.S. Bank",
+       "loans": 4,
+       "dollars": 155800,
+       "state": "OH"
+      },
+      {
+       "name": "Northeast Bank",
+       "loans": 2,
+       "dollars": 525000,
+       "state": "ME"
+      },
+      {
+       "name": "Fifth Third Bank",
+       "loans": 1,
+       "dollars": 35000,
+       "state": "OH"
+      }
+     ],
+     "q": {
+      "count": 2,
+      "dollars": 111300,
+      "new": 2,
+      "jobs": 4,
+      "top": [
+       {
+        "business": "Can Ya Dig It LLC",
+        "city": "Flemingsburg",
+        "county": "Fleming",
+        "lender": "Community Trust Bank",
+        "amount": 90800,
+        "industry": "Plumbing, Heating, and Air-Conditioning Contractors",
+        "age": "new",
+        "date": "2026-05-19"
+       },
+       {
+        "business": "Can Ya Dig It LLC",
+        "city": "Flemingsburg",
+        "county": "Fleming",
+        "lender": "Community Trust Bank",
+        "amount": 20500,
+        "industry": "Plumbing, Heating, and Air-Conditioning Contractors",
+        "age": "new",
+        "date": "2026-05-19"
+       }
+      ]
+     }
+    }
+   },
+   "p504": {
+    "as_of": "2026-06-30",
+    "statewide": {
+     "count": 11,
+     "dollars": 11349000,
+     "tpl_dollars": 14765469,
+     "new": 0,
+     "jobs": 86
+    },
+    "territories": {
+     "Lexington": {
+      "count": 4,
+      "dollars": 1495000.0,
+      "new": 0,
+      "jobs": 16.0,
+      "top": [
+       {
+        "business": "Woodshed Beverage, LLC",
+        "city": "Cynthiana",
+        "county": "Harrison",
+        "cdc": "Purchase Area Development District",
+        "tpl": "Traditional Bank Inc",
+        "tpl_dollars": 920085.0,
+        "amount": 661000.0,
+        "industry": "Distilleries",
+        "age": "existing",
+        "date": "2025-11-18"
+       },
+       {
+        "business": "LEXINGTON FERTILITY CENTER",
+        "city": "Lexington",
+        "county": "Fayette",
+        "cdc": "Community Ventures Corporation",
+        "tpl": "Stock Yards Bank & Trust Company",
+        "tpl_dollars": 407250.0,
+        "amount": 330000.0,
+        "industry": "Offices of Physicians (except Mental Health Specialists)",
+        "age": "existing",
+        "date": "2026-01-05"
+       },
+       {
+        "business": "DR. ELECTRIC LLC",
+        "city": "Lexington",
+        "county": "Fayette",
+        "cdc": "Capital Access Corporation - Kentucky",
+        "tpl": "Bank of the Bluegrass & Trust Company",
+        "tpl_dollars": 325000.0,
+        "amount": 270000.0,
+        "industry": "Electrical Contractors and Other Wiring Installation Contractors",
+        "age": "existing",
+        "date": "2026-01-08"
+       },
+       {
+        "business": "TWIRL LEXINGTON",
+        "city": "Lexington",
+        "county": "Fayette",
+        "cdc": "Community Ventures Corporation",
+        "tpl": "Central Bank & Trust Co.",
+        "tpl_dollars": 279200.0,
+        "amount": 234000.0,
+        "industry": "Clothing and Clothing Accessories Retailers",
+        "age": "existing",
+        "date": "2026-02-17"
+       }
+      ]
+     },
+     "Covington": {
+      "count": 1,
+      "dollars": 356000.0,
+      "new": 0,
+      "jobs": 4.0,
+      "top": [
+       {
+        "business": "JD Auto Service, Inc.",
+        "city": "Florence",
+        "county": "Boone",
+        "cdc": "Alloy Development Co., Inc.",
+        "tpl": "Heritage Bank Inc",
+        "tpl_dollars": 425000.0,
+        "amount": 356000.0,
+        "industry": "Automotive Body, Paint, and Interior Repair and Maintenance",
+        "age": "existing",
+        "date": "2025-12-19"
+       }
+      ]
+     },
+     "Paducah": {
+      "count": 1,
+      "dollars": 213000.0,
+      "new": 0,
+      "jobs": 3.0,
+      "top": [
+       {
+        "business": "West Kentucky Moving Company, LLC.",
+        "city": "Mayfield",
+        "county": "Graves",
+        "cdc": "Purchase Area Development District",
+        "tpl": "CFSB",
+        "tpl_dollars": 250000.0,
+        "amount": 213000.0,
+        "industry": "Used Household and Office Goods Moving",
+        "age": "existing",
+        "date": "2025-12-30"
+       }
+      ]
+     },
+     "Frankfort": {
+      "count": 2,
+      "dollars": 6021000.0,
+      "new": 0,
+      "jobs": 22.0,
+      "top": [
+       {
+        "business": "CREATIVE PROPERTIES OF KENTUCKY, LLC",
+        "city": "Shelbyville",
+        "county": "Shelby",
+        "cdc": "Capital Access Corporation - Kentucky",
+        "tpl": "Old National Bank",
+        "tpl_dollars": 7391200.0,
+        "amount": 5500000.0,
+        "industry": "All Other Miscellaneous Manufacturing",
+        "age": "existing",
+        "date": "2026-01-09"
+       },
+       {
+        "business": "WALKER INVESTMENT HOLDINGS Inc.",
+        "city": "La Grange",
+        "county": "Oldham",
+        "cdc": "Alloy Development Co., Inc.",
+        "tpl": "Republic Bank & Trust Company",
+        "tpl_dollars": 825000.0,
+        "amount": 521000.0,
+        "industry": "Reupholstery and Furniture Repair",
+        "age": "existing",
+        "date": "2026-02-19"
+       }
+      ]
+     },
+     "Elizabethtown": {
+      "count": 1,
+      "dollars": 501000.0,
+      "new": 0,
+      "jobs": 7.0,
+      "top": [
+       {
+        "business": "SFH COMPANY LLC",
+        "city": "Mount Washington",
+        "county": "Bullitt",
+        "cdc": "Community Ventures Corporation",
+        "tpl": "PNC Bank, National Association",
+        "tpl_dollars": 603000.0,
+        "amount": 501000.0,
+        "industry": "All Other Specialty Trade Contractors",
+        "age": "existing",
+        "date": "2026-04-29"
+       }
+      ]
+     },
+     "Louisville": {
+      "count": 2,
+      "dollars": 2763000.0,
+      "new": 0,
+      "jobs": 34.0,
+      "top": [
+       {
+        "business": "Ayres, LLC",
+        "city": "Louisville",
+        "county": "Jefferson",
+        "cdc": "Premier Capital Corporation",
+        "tpl": "Busey Bank",
+        "tpl_dollars": 2069734.0,
+        "amount": 1711000.0,
+        "industry": "Full-Service Restaurants",
+        "age": "existing",
+        "date": "2026-06-09"
+       },
+       {
+        "business": "Wilkinson Builders, Inc.",
+        "city": "Louisville",
+        "county": "Jefferson",
+        "cdc": "Alloy Development Co., Inc.",
+        "tpl": "Republic Bank & Trust Company",
+        "tpl_dollars": 1270000.0,
+        "amount": 1052000.0,
+        "industry": "New Single-Family Housing Construction (except For-Sale Builders)",
+        "age": "existing",
+        "date": "2026-05-14"
+       }
+      ]
+     }
+    },
+    "counties": {
+     "HARRISON": {
+      "loans": 1,
+      "dollars": 661000
+     },
+     "FAYETTE": {
+      "loans": 3,
+      "dollars": 834000
+     },
+     "BOONE": {
+      "loans": 1,
+      "dollars": 356000
+     },
+     "GRAVES": {
+      "loans": 1,
+      "dollars": 213000
+     },
+     "SHELBY": {
+      "loans": 1,
+      "dollars": 5500000
+     },
+     "OLDHAM": {
+      "loans": 1,
+      "dollars": 521000
+     },
+     "BULLITT": {
+      "loans": 1,
+      "dollars": 501000
+     },
+     "JEFFERSON": {
+      "loans": 2,
+      "dollars": 2763000
+     }
+    },
+    "cdcs": [
+     {
+      "name": "Alloy Development Co., Inc.",
+      "count": 3,
+      "dollars": 1929000
+     },
+     {
+      "name": "Community Ventures Corporation",
+      "count": 3,
+      "dollars": 1065000
+     },
+     {
+      "name": "Capital Access Corporation - Kentucky",
+      "count": 2,
+      "dollars": 5770000
+     },
+     {
+      "name": "Purchase Area Development District",
+      "count": 2,
+      "dollars": 874000
+     },
+     {
+      "name": "Premier Capital Corporation",
+      "count": 1,
+      "dollars": 1711000
+     }
+    ]
+   }
   }
  ]
 }
